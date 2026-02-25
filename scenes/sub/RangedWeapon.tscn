@@ -1,10 +1,42 @@
-[gd_scene load_steps=6 format=3 uid="uid://crqwkpb2jn8fq"]
+[gd_scene load_steps=14 format=3 uid="uid://crqwkpb2jn8fq"]
 
 [ext_resource type="Script" uid="uid://c1iptw5vqre6f" path="res://scripts/entities/enemies/attacks/hitbox.gd" id="1_6v43l"]
 [ext_resource type="Script" uid="uid://dbgqvlk72h7l" path="res://scripts/entities/enemies/attacks/ranged_weapon.gd" id="1_duflq"]
+[ext_resource type="Shader" uid="uid://cnufkqrd0wvae" path="res://VFX/MiteExplosionCloud.gdshader" id="2_1glqb"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_duflq"]
-albedo_color = Color(1, 0, 0, 1)
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_1glqb"]
+noise_type = 3
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_0wux2"]
+noise = SubResource("FastNoiseLite_1glqb")
+
+[sub_resource type="Gradient" id="Gradient_1glqb"]
+offsets = PackedFloat32Array(0, 0.5046296, 1)
+colors = PackedColorArray(1, 0, 0, 1, 1, 0.38039216, 0, 1, 1, 0.6509804, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0wux2"]
+gradient = SubResource("Gradient_1glqb")
+
+[sub_resource type="Gradient" id="Gradient_yt8jq"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_184e1"]
+gradient = SubResource("Gradient_yt8jq")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_x71ii"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yt8jq"]
+render_priority = 0
+shader = ExtResource("2_1glqb")
+shader_parameter/cloud_noise = SubResource("NoiseTexture2D_0wux2")
+shader_parameter/fireball_noise = SubResource("NoiseTexture2D_x71ii")
+shader_parameter/explosion_noise = SubResource("GradientTexture2D_184e1")
+shader_parameter/color_ramp = SubResource("GradientTexture2D_0wux2")
+shader_parameter/explosion_color = Color(1, 0.4257876, 0.35708547, 1)
+shader_parameter/explosion_amount = 0.999999977648
+shader_parameter/radius_scale = 0.25
+shader_parameter/cloud_scale = 4.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_kfiv0"]
 
@@ -14,7 +46,8 @@ albedo_color = Color(1, 0, 0, 1)
 script = ExtResource("1_duflq")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-material_overlay = SubResource("StandardMaterial3D_duflq")
+material_overlay = SubResource("ShaderMaterial_yt8jq")
+cast_shadow = 0
 mesh = SubResource("SphereMesh_kfiv0")
 
 [node name="Hitbox" type="Area3D" parent="."]

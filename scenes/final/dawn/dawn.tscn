@@ -1,10 +1,10 @@
-[gd_scene load_steps=107 format=3 uid="uid://c2akhsyinel8t"]
+[gd_scene load_steps=109 format=3 uid="uid://c2akhsyinel8t"]
 
 [ext_resource type="Script" uid="uid://ccrew8qivqlpt" path="res://scripts/entities/player/dawn/dawn.gd" id="1_m3k46"]
 [ext_resource type="Script" uid="uid://b5x83pb133x8d" path="res://scripts/entities/player/player_states/player_state_machine.gd" id="2_n7ie5"]
 [ext_resource type="Script" uid="uid://2u0qr5shhbye" path="res://scripts/entities/player/dawn/states/dawn_idle.gd" id="3_qntpm"]
 [ext_resource type="Script" uid="uid://cg0mo72va2qqs" path="res://scripts/entities/player/dawn/states/dawn_moving.gd" id="4_wex2d"]
-[ext_resource type="Script" uid="uid://clwu1a1we224o" path="res://scripts/entities/player/player_states/player_attacking.gd" id="5_548oj"]
+[ext_resource type="Script" path="res://scripts/entities/player/player_states/player_attacking.gd" id="5_548oj"]
 [ext_resource type="Script" uid="uid://276qi6fix2cm" path="res://scripts/entities/player/dawn/states/dawn_fire_tone.gd" id="6_n7ie5"]
 [ext_resource type="Script" uid="uid://dbibjhk11ovnr" path="res://scripts/entities/player/player_states/player_charge.gd" id="6_qnimx"]
 [ext_resource type="Script" uid="uid://cdyk5mdxf2wsl" path="res://scripts/entities/player/dawn/states/dawn_charged_attack.gd" id="8_548oj"]
@@ -14,10 +14,10 @@
 [ext_resource type="Script" uid="uid://dssk02ahlboui" path="res://scripts/entities/player/player_states/player_swap_out.gd.gd" id="10_wex2d"]
 [ext_resource type="Script" uid="uid://dwp2qr3aqomck" path="res://scripts/entities/player/dawn/states/dawn_special_ability.gd" id="11_bbdqe"]
 [ext_resource type="Script" uid="uid://cty8d5lvonei1" path="res://scripts/entities/player/player_states/player_sleeping.gd" id="11_bxptc"]
-[ext_resource type="Script" uid="uid://d3pkbl7ownr11" path="res://scripts/entities/player/player_states/player_hit_stun.gd" id="12_6x7f2"]
+[ext_resource type="Script" path="res://scripts/entities/player/player_states/player_hit_stun.gd" id="12_6x7f2"]
 [ext_resource type="Script" uid="uid://cpj3ro4ajatrk" path="res://scripts/entities/player/dawn/states/dawn_tone_forte.gd" id="12_bxptc"]
 [ext_resource type="Script" uid="uid://vw4slmysqu7q" path="res://scripts/entities/player/dawn/states/dawn_tone_fishshield.gd" id="13_e60w5"]
-[ext_resource type="Script" uid="uid://cpcuaot05ab18" path="res://scripts/entities/player/player_states/player_dash.gd" id="18_wex2d"]
+[ext_resource type="Script" path="res://scripts/entities/player/player_states/player_dash.gd" id="18_wex2d"]
 [ext_resource type="Script" uid="uid://irxuylaptnty" path="res://scripts/entities/enemies/states/dead.gd" id="19_6x7f2"]
 [ext_resource type="PackedScene" uid="uid://c4numrguhjb63" path="res://scenes/dev/chrizz/prototyping/Final Effects/dawn_charge_vfx.tscn" id="20_n6vc4"]
 [ext_resource type="Script" uid="uid://b6cr1imhnu2xs" path="res://addons/shaderV/uv/twirl.gd" id="20_pk6rl"]
@@ -30,10 +30,10 @@
 [ext_resource type="Shader" uid="uid://bnancykekno2t" path="res://scenes/dev/chrizz/distortion.tres" id="24_cih63"]
 [ext_resource type="Texture2D" uid="uid://bfmq4qyv6hv0v" path="res://scenes/final/dawn/caustics.png" id="25_1i8fv"]
 [ext_resource type="PackedScene" uid="uid://crtpdqb2ymr2p" path="res://scenes/final/dawn/tone_slowwave.tscn" id="25_qnimx"]
-[ext_resource type="Texture2D" uid="uid://qj1lsmefhhje" path="res://vfx/Kenny Particle Pack/circle_05.png" id="25_xphuo"]
+[ext_resource type="Texture2D" uid="uid://qj1lsmefhhje" path="res://VFX/Kenny Particle Pack/circle_05.png" id="25_xphuo"]
 [ext_resource type="ArrayMesh" uid="uid://bd5wy4vqrfeld" path="res://scenes/dev/chrizz/prototyping/sound_blast_extra.obj" id="26_h3uuf"]
-[ext_resource type="Script" uid="uid://hrugoc51xhma" path="res://vfx/AutoStartVFX.gd" id="27_1i8fv"]
-[ext_resource type="Script" uid="uid://bfrtyltb7er5j" path="res://scripts/utility/ui_consumable.gd" id="27_7cxsd"]
+[ext_resource type="Script" uid="uid://hrugoc51xhma" path="res://VFX/AutoStartVFX.gd" id="27_1i8fv"]
+[ext_resource type="Script" path="res://scripts/utility/ui_consumable.gd" id="27_7cxsd"]
 [ext_resource type="PackedScene" uid="uid://bdh4cmnftg18b" path="res://scenes/final/dawn/tone_wave.tscn" id="28_qntpm"]
 [ext_resource type="PackedScene" uid="uid://cein11fhbr6sp" path="res://scenes/final/dawn/tone_fish.tscn" id="28_wex2d"]
 [ext_resource type="PackedScene" uid="uid://btiyd8a5nuror" path="res://scenes/final/dawn/tone_stunwave.tscn" id="31_6x7f2"]
@@ -42,6 +42,8 @@
 [ext_resource type="PackedScene" uid="uid://c3hpdu6n1fa6d" path="res://scenes/dev/anth/dissolveFX.tscn" id="33_bxptc"]
 [ext_resource type="PackedScene" uid="uid://bndpka5pxyhx6" path="res://scenes/final/dawn/tone_ice.tscn" id="33_fgi08"]
 [ext_resource type="PackedScene" uid="uid://bt3ebb8eyl2c7" path="res://scenes/dev/arshiya_r/magic circle things/magic_circle_dawn.tscn" id="38_pk6rl"]
+[ext_resource type="PackedScene" uid="uid://bw4n7kv3fm66f" path="res://scenes/final/VFX/dashFX.tscn" id="43_xiq0h"]
+[ext_resource type="PackedScene" uid="uid://dwun8m67rc0fn" path="res://scenes/final/VFX/footprintsFX.tscn" id="44_h166w"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_21ndv"]
 
@@ -859,11 +861,19 @@ dissolveBegin = 0.3
 dissolveDuration = 1.0
 meshes = [NodePath("../dawn_rig/Skeleton3D/body"), NodePath("../dawn_rig/Skeleton3D/hair")]
 
+[node name="dashFX" parent="." instance=ExtResource("43_xiq0h")]
+
+[node name="footprintsFX" parent="." instance=ExtResource("44_h166w")]
+emitting = false
+
 [connection signal="hurt" from="." to="Hurt SFX" method="play" unbinds=1]
 [connection signal="killed" from="." to="Death SFX" method="play"]
 [connection signal="player_dashed" from="." to="Dash SFX" method="play_one_shot"]
+[connection signal="entered" from="StateMachine/Idle" to="footprintsFX" method="is_emitting" binds= [false]]
 [connection signal="entered" from="StateMachine/Moving" to="StateMachine/Moving/Footstep SFX" method="play"]
+[connection signal="entered" from="StateMachine/Moving" to="footprintsFX" method="is_emitting" binds= [true]]
 [connection signal="finished" from="StateMachine/Moving" to="StateMachine/Moving/Footstep SFX" method="stop"]
+[connection signal="finished" from="StateMachine/Moving" to="footprintsFX" method="is_emitting" binds= [false]]
 [connection signal="fire" from="StateMachine/Attacking/Tone1" to="ToneEmitter" method="spawn_melody"]
 [connection signal="fire" from="StateMachine/Attacking/Tone1" to="StateMachine/Attacking/Tone1/Attack SFX" method="play" binds= [true]]
 [connection signal="fire" from="StateMachine/Attacking/Tone2" to="ToneEmitter" method="spawn_melody"]
@@ -892,6 +902,8 @@ meshes = [NodePath("../dawn_rig/Skeleton3D/body"), NodePath("../dawn_rig/Skeleto
 [connection signal="entered" from="StateMachine/Special/SpecialAbility/ToneIce" to="StateMachine/Special/SpecialAbility/ToneIce/SFX" method="play" binds= [true]]
 [connection signal="fire" from="StateMachine/Special/SpecialAbility/ToneIce" to="ToneEmitter" method="spawn_ice_zone"]
 [connection signal="entered" from="StateMachine/Special/SpecialAbility/ToneFishShield" to="StateMachine/Special/SpecialAbility/ToneFishShield/SFX" method="play" binds= [true]]
+[connection signal="entered" from="StateMachine/Dash" to="dashFX" method="is_emitting" binds= [true]]
+[connection signal="finished" from="StateMachine/Dash" to="dashFX" method="is_emitting" binds= [false]]
 [connection signal="entered" from="StateMachine/Dead" to="DissolveFX" method="beginDissolve"]
 
 [editable path="dawn_rig"]

@@ -1,8 +1,8 @@
-[gd_scene load_steps=43 format=3 uid="uid://brmdsiu0kp6ca"]
+[gd_scene load_steps=44 format=3 uid="uid://brmdsiu0kp6ca"]
 
 [ext_resource type="Script" uid="uid://c74o40qwxv1la" path="res://scripts/utility/player_manager.gd" id="1_lyudl"]
 [ext_resource type="PackedScene" uid="uid://brw0p1eirto83" path="res://scenes/final/Nova.tscn" id="2_dvwxt"]
-[ext_resource type="Script" uid="uid://br0axf7abuchp" path="res://scripts/camera_target.gd" id="3_3c5ji"]
+[ext_resource type="Script" path="res://scripts/camera_target.gd" id="3_3c5ji"]
 [ext_resource type="PackedScene" uid="uid://c2akhsyinel8t" path="res://scenes/final/dawn/dawn.tscn" id="3_kpy7t"]
 [ext_resource type="PackedScene" uid="uid://bq7t53o2llxr4" path="res://scenes/final/rene/Rene.tscn" id="3_q78nk"]
 [ext_resource type="Script" uid="uid://djfekv55fum3x" path="res://scripts/pitch_pivot.gd" id="4_mbt4c"]
@@ -10,19 +10,19 @@
 [ext_resource type="Texture2D" uid="uid://byhsbr64tgbkf" path="res://VFX/Kenny Particle Pack/magic_03.png" id="8_3wvx5"]
 [ext_resource type="Texture2D" uid="uid://qj1lsmefhhje" path="res://VFX/Kenny Particle Pack/circle_05.png" id="8_elt32"]
 [ext_resource type="Script" uid="uid://bf2vjp8jufhy3" path="res://austin_newby/menu/menu_element.gd" id="9_0dwuh"]
-[ext_resource type="Script" uid="uid://43igx2jhor0s" path="res://scripts/utility/death_menu.gd" id="9_41j18"]
-[ext_resource type="Script" uid="uid://cgnkwyku38tw7" path="res://scripts/utility/per_player_ui.gd" id="9_rkpjn"]
-[ext_resource type="Script" uid="uid://byn2jbtug26j3" path="res://scripts/utility/game_menu.gd" id="10_d11v8"]
-[ext_resource type="Script" uid="uid://baxdofgbk1vp0" path="res://scripts/utility/UIBounce.gd" id="11_d11v8"]
+[ext_resource type="Script" path="res://scripts/utility/death_menu.gd" id="9_41j18"]
+[ext_resource type="Script" path="res://scripts/utility/per_player_ui.gd" id="9_rkpjn"]
+[ext_resource type="Script" path="res://scripts/utility/game_menu.gd" id="10_d11v8"]
+[ext_resource type="Script" path="res://scripts/utility/UIBounce.gd" id="11_d11v8"]
 [ext_resource type="Texture2D" uid="uid://bpkv1mg8teq11" path="res://art_assets/Ui/FinalPortraits/novaportaraitCLEAR.png" id="13_7o27n"]
 [ext_resource type="Texture2D" uid="uid://d0np8pel0cm26" path="res://art_assets/Ui/FinalPortraits/dawnCLEAR.png" id="14_72sbn"]
-[ext_resource type="Script" uid="uid://b23m0ymm5td5r" path="res://scripts/utility/3d_2d_ui.gd" id="14_fop7g"]
-[ext_resource type="Script" uid="uid://diaap70c4mvfb" path="res://scripts/utility/menu_sfx.gd" id="15_27jnq"]
-[ext_resource type="Script" uid="uid://bv28fxbtlv4es" path="res://scripts/utility/pause_menu.gd" id="15_rkpjn"]
+[ext_resource type="Script" path="res://scripts/utility/3d_2d_ui.gd" id="14_fop7g"]
+[ext_resource type="Script" path="res://scripts/utility/menu_sfx.gd" id="15_27jnq"]
+[ext_resource type="Script" path="res://scripts/utility/pause_menu.gd" id="15_rkpjn"]
 [ext_resource type="PackedScene" uid="uid://hs6isup6bhpk" path="res://scenes/dev/ZXue/refactor_SettingMenu/SettingMenu.tscn" id="16_d11v8"]
 [ext_resource type="Texture2D" uid="uid://pabqlrbnoq4a" path="res://art_assets/Ui/ControlPanels/Nova/Resume Button.png" id="16_w3iyl"]
 [ext_resource type="Texture2D" uid="uid://dsopj6d3okqda" path="res://art_assets/Ui/ControlPanels/Nova/Nova Corner Portrait.png" id="17_3wvx5"]
-[ext_resource type="Script" uid="uid://ri30deerqwg7" path="res://scripts/entities/player/swap_in_vocal_selector.gd" id="17_fop7g"]
+[ext_resource type="Script" path="res://scripts/entities/player/swap_in_vocal_selector.gd" id="17_fop7g"]
 [ext_resource type="Texture2D" uid="uid://c4lk3o8cr5585" path="res://art_assets/Ui/ControlPanels/Nova/Reload Button.png" id="17_k852m"]
 [ext_resource type="Texture2D" uid="uid://oov1kn7x7w44" path="res://art_assets/Ui/ControlPanels/Nova/Main Menu Button.png" id="18_3wvx5"]
 [ext_resource type="Texture2D" uid="uid://bbvfl0w3ies1t" path="res://art_assets/Ui/ControlPanels/Nova/NOVA.png" id="18_elt32"]
@@ -33,6 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://147m6fkwtvf3" path="res://art_assets/Ui/ControlPanels/Dawn/Dawn Full Control Panel.png" id="26_lwj1m"]
 [ext_resource type="Texture2D" uid="uid://bklpvubfdogqr" path="res://art_assets/Ui/ControlPanels/Dawn/Dawn Corner Portrait.png" id="27_f620v"]
 [ext_resource type="Texture2D" uid="uid://c66y8x2ip4vdm" path="res://art_assets/Ui/ControlPanels/Dawn/DAWN.png" id="28_p704c"]
+[ext_resource type="PackedScene" uid="uid://csfp82ivxnbi5" path="res://characterSwapFX.tscn" id="34_3h4bm"]
 
 [sub_resource type="Curve" id="Curve_q54j5"]
 _limits = [0.0, 2.0, 0.0, 1.0]
@@ -80,16 +81,16 @@ floor_snap_length = 5.0
 interruptible_states = Array[String](["Idle", "Moving", "Charging", "ChargingSpecial", "Attacking"])
 
 [node name="Skeleton3D" parent="Nova/nova" index="0"]
-bones/14/rotation = Quaternion(-0.0650123, 0.5219126, -0.50668687, 0.6831173)
-bones/15/rotation = Quaternion(-0.17049593, 0.5683423, 0.23435858, 0.77006114)
-bones/16/rotation = Quaternion(-0.50319755, -0.47709852, -0.26250738, 0.6710135)
-bones/21/rotation = Quaternion(-0.14024559, 0.36904004, -0.467532, 0.79092)
-bones/22/rotation = Quaternion(-0.07513197, 0.37930638, 0.18633015, 0.903196)
-bones/23/rotation = Quaternion(0.1369958, 0.10937438, -0.086109646, 0.9807418)
-bones/38/rotation = Quaternion(-0.35069263, 0.7060908, 0.06105099, 0.61214656)
+bones/14/rotation = Quaternion(-0.07578859, 0.52619326, -0.5069223, 0.6785327)
+bones/15/rotation = Quaternion(-0.15614393, 0.5457038, 0.230161, 0.790476)
+bones/16/rotation = Quaternion(-0.5142737, -0.47077113, -0.23150408, 0.6784564)
+bones/21/rotation = Quaternion(-0.1252779, 0.3959168, -0.4794434, 0.77310383)
+bones/22/rotation = Quaternion(-0.05693453, 0.32740003, 0.16948253, 0.92781645)
+bones/23/rotation = Quaternion(0.10218342, 0.13336612, -0.07970895, 0.9825572)
+bones/38/rotation = Quaternion(-0.35135165, 0.70576453, 0.060478818, 0.6122016)
 
 [node name="BoneAttachment3D" parent="Nova/nova/Skeleton3D" index="5"]
-transform = Transform3D(-0.0035313554, -0.5699934, 0.82164174, -0.42187372, 0.74579793, 0.5155656, -0.90664774, -0.3448084, -0.24309897, 0.00604611, 0.0071870503, -0.013190575)
+transform = Transform3D(-0.0024710959, -0.569999, 0.8216417, -0.4232675, 0.7450091, 0.51556367, -0.90600127, -0.34650025, -0.24310315, 0.0060626734, 0.007165247, -0.013180535)
 
 [node name="Idle" parent="Nova/nova" index="3"]
 animation_tree = Object(AnimationTree,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"physics_interpolation_mode":0,"auto_translate_mode":0,"editor_description":"","active":true,"deterministic":false,"reset_on_save":true,"root_node":NodePath(".."),"root_motion_track":NodePath(""),"root_motion_local":false,"audio_max_polyphony":32,"callback_mode_process":1,"callback_mode_method":0,"callback_mode_discrete":2,"tree_root":null,"advance_expression_base_node":NodePath("."),"anim_player":NodePath("../AnimationPlayer"),"script":null)
@@ -167,9 +168,6 @@ passive_death_time = 2.5
 [node name="HitStun" parent="Rene/StateMachine" index="11"]
 interruptible_states = Array[String](["Idle", "Moving", "Charging", "ChargingSpecial", "Attacking"])
 
-[node name="Rene\'s Circle" parent="Rene" index="10" node_paths=PackedStringArray("particles")]
-particles = [NodePath("sparks"), NodePath("sparks")]
-
 [node name="Idle" parent="Rene/rene" index="3"]
 animation_tree = Object(AnimationTree,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"physics_interpolation_mode":0,"auto_translate_mode":0,"editor_description":"","active":true,"deterministic":true,"reset_on_save":true,"root_node":NodePath(".."),"root_motion_track":NodePath(""),"root_motion_local":false,"audio_max_polyphony":32,"callback_mode_process":1,"callback_mode_method":0,"callback_mode_discrete":2,"tree_root":null,"advance_expression_base_node":NodePath("."),"anim_player":NodePath("../AnimationPlayer"),"script":null)
 
@@ -239,7 +237,6 @@ material_override = null
 [node name="CameraTarget" type="Node3D" parent="."]
 top_level = true
 script = ExtResource("3_3c5ji")
-metadata/_custom_type_script = "uid://br0axf7abuchp"
 
 [node name="Camera3D" type="Camera3D" parent="CameraTarget"]
 transform = Transform3D(0.70710677, -0.4055798, 0.579228, 0, 0.81915206, 0.57357645, -0.70710677, -0.4055798, 0.579228, 25, 25, 25)
@@ -717,7 +714,11 @@ event_guid = "{2e60cfb9-5430-4e06-a95e-b911fa00f126}"
 event_name = "event:/Player/Dawn Swap-Out"
 event_guid = "{05b0eb79-dcf6-488e-a088-a245cceeda31}"
 
+[node name="characterSwapFX" parent="." instance=ExtResource("34_3h4bm")]
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, -0.5, 0)
+
 [connection signal="new_player" from="." to="Game Menu/GameUi" method="on_player_switch"]
+[connection signal="new_player" from="." to="characterSwapFX" method="spawn" unbinds=1]
 [connection signal="player_hp_update" from="." to="Game Menu/GameUi" method="on_player_health_update"]
 [connection signal="player_sp_update" from="." to="Game Menu/GameUi" method="on_player_sp_update"]
 [connection signal="killed" from="Nova" to="Game Menu/GameUi/MarginContainer/Offset/Nova" method="on_death"]

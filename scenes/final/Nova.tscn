@@ -1,24 +1,24 @@
-[gd_scene load_steps=116 format=3 uid="uid://brw0p1eirto83"]
+[gd_scene load_steps=118 format=3 uid="uid://brw0p1eirto83"]
 
 [ext_resource type="Script" uid="uid://om4qdtr1cye0" path="res://scripts/entities/player/nova/nova.gd" id="1_p5oh7"]
 [ext_resource type="Script" uid="uid://dhp5dxiok3t8i" path="res://scripts/dev/debug_render_hitboxes.gd" id="3_6m1nx"]
 [ext_resource type="Script" uid="uid://cvw6ajdumfkos" path="res://scripts/entities/player/nova/nova_dummy_anim.gd" id="3_h31i5"]
 [ext_resource type="Script" uid="uid://b5x83pb133x8d" path="res://scripts/entities/player/player_states/player_state_machine.gd" id="4_lfcoe"]
-[ext_resource type="Script" uid="uid://cpcuaot05ab18" path="res://scripts/entities/player/player_states/player_dash.gd" id="4_uws5v"]
+[ext_resource type="Script" path="res://scripts/entities/player/player_states/player_dash.gd" id="4_uws5v"]
 [ext_resource type="Script" uid="uid://dq5qwb33mlr2l" path="res://scripts/entities/player/player_states/player_moving.gd" id="5_lfcoe"]
 [ext_resource type="Script" uid="uid://bpndinylqyege" path="res://scripts/entities/player/player_states/player_idle.gd" id="5_xhleb"]
-[ext_resource type="Script" uid="uid://clwu1a1we224o" path="res://scripts/entities/player/player_states/player_attacking.gd" id="6_ob225"]
+[ext_resource type="Script" path="res://scripts/entities/player/player_states/player_attacking.gd" id="6_ob225"]
 [ext_resource type="Script" uid="uid://8l57dsfm2da5" path="res://scripts/entities/player/nova/states/nova_attack.gd" id="7_ob225"]
 [ext_resource type="Script" uid="uid://dbibjhk11ovnr" path="res://scripts/entities/player/player_states/player_charge.gd" id="7_w7jsq"]
-[ext_resource type="Script" uid="uid://divq6voanp8gg" path="res://scripts/entities/player/nova/states/nova_special.gd" id="8_uws5v"]
+[ext_resource type="Script" path="res://scripts/entities/player/nova/states/nova_special.gd" id="8_uws5v"]
 [ext_resource type="Script" uid="uid://bht7ur6aqu5my" path="res://scripts/entities/player/player_states/player_charge_special.gd" id="9_8b4uh"]
-[ext_resource type="Script" uid="uid://dc7b5xuh33cje" path="res://scripts/entities/player/nova/states/nova_special_wait.gd" id="10_8qhfg"]
-[ext_resource type="Script" uid="uid://gui8m2w4ihx1" path="res://scripts/entities/player/nova/states/nova_special_dash.gd" id="10_ob225"]
+[ext_resource type="Script" path="res://scripts/entities/player/nova/states/nova_special_wait.gd" id="10_8qhfg"]
+[ext_resource type="Script" path="res://scripts/entities/player/nova/states/nova_special_dash.gd" id="10_ob225"]
 [ext_resource type="Script" uid="uid://cw3b5sywe4lom" path="res://scripts/entities/player/nova/states/nova_swap_in.gd" id="11_1o1ys"]
 [ext_resource type="Script" uid="uid://dssk02ahlboui" path="res://scripts/entities/player/player_states/player_swap_out.gd.gd" id="12_cfkss"]
 [ext_resource type="Script" uid="uid://cty8d5lvonei1" path="res://scripts/entities/player/player_states/player_sleeping.gd" id="13_5otq2"]
-[ext_resource type="Script" uid="uid://d3pkbl7ownr11" path="res://scripts/entities/player/player_states/player_hit_stun.gd" id="15_h46t7"]
-[ext_resource type="Script" uid="uid://bjlnudp8j65ma" path="res://scripts/entities/animation_state.gd" id="15_ranno"]
+[ext_resource type="Script" path="res://scripts/entities/player/player_states/player_hit_stun.gd" id="15_h46t7"]
+[ext_resource type="Script" path="res://scripts/entities/animation_state.gd" id="15_ranno"]
 [ext_resource type="Script" uid="uid://irxuylaptnty" path="res://scripts/entities/enemies/states/dead.gd" id="17_gedrv"]
 [ext_resource type="Material" uid="uid://bmvdfa1accn3t" path="res://art_assets/characters/Nova/nova_rig_nobaFBXASC032jack.material" id="21_5up7p"]
 [ext_resource type="Material" uid="uid://qq8kt1ydqeac" path="res://art_assets/characters/Nova/nova_rig_steel.material" id="22_vrbf8"]
@@ -34,8 +34,10 @@
 [ext_resource type="Shader" uid="uid://dk7uhwse27msj" path="res://addons/GPUTrails/shaders/trail.gdshader" id="30_ajeah"]
 [ext_resource type="Shader" uid="uid://cwtpog285648p" path="res://addons/GPUTrails/shaders/trail_draw_pass.gdshader" id="31_gedrv"]
 [ext_resource type="Texture2D" uid="uid://crk6pkb7e5rwc" path="res://addons/GPUTrails/defaults/texture.tres" id="32_ajeah"]
-[ext_resource type="Script" uid="uid://drugjbbmd0wed" path="res://scripts/entities/SlashVFX.gd" id="33_ajeah"]
+[ext_resource type="Script" path="res://scripts/entities/SlashVFX.gd" id="33_ajeah"]
 [ext_resource type="PackedScene" uid="uid://c3hpdu6n1fa6d" path="res://scenes/dev/anth/dissolveFX.tscn" id="36_n6rgu"]
+[ext_resource type="PackedScene" uid="uid://bw4n7kv3fm66f" path="res://scenes/final/VFX/dashFX.tscn" id="37_ldc4w"]
+[ext_resource type="PackedScene" uid="uid://dwun8m67rc0fn" path="res://scenes/final/VFX/footprintsFX.tscn" id="38_lk157"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_21ndv"]
 radius = 0.235
@@ -7493,12 +7495,12 @@ bones/10/position = Vector3(0.007249624, 0, 0)
 bones/10/rotation = Quaternion(1.6763805e-08, -1.664739e-08, -0.12919243, 0.9916195)
 bones/11/position = Vector3(0.0061893025, 0, 0)
 bones/11/rotation = Quaternion(0.9975918, -0.06935873, -7.450581e-09, -3.0267984e-09)
-bones/14/rotation = Quaternion(-0.06870525, 0.52305627, -0.5068305, 0.681773)
-bones/15/rotation = Quaternion(-0.16735886, 0.5635146, 0.23350856, 0.7745425)
-bones/16/rotation = Quaternion(-0.505753, -0.47748154, -0.2543467, 0.6719621)
-bones/21/rotation = Quaternion(-0.13250558, 0.37323555, -0.47533977, 0.78561413)
-bones/22/rotation = Quaternion(-0.070268534, 0.3661599, 0.18216272, 0.90983844)
-bones/23/rotation = Quaternion(0.12181114, 0.11749631, -0.08742651, 0.981689)
+bones/14/rotation = Quaternion(-0.065891, 0.5225851, -0.50638485, 0.6827428)
+bones/15/rotation = Quaternion(-0.16540356, 0.5604825, 0.2329657, 0.777321)
+bones/16/rotation = Quaternion(-0.5068862, -0.47049338, -0.2550614, 0.6757559)
+bones/21/rotation = Quaternion(-0.14822356, 0.38263533, -0.45856845, 0.78824794)
+bones/22/rotation = Quaternion(-0.07090473, 0.36795458, 0.18274163, 0.9089486)
+bones/23/rotation = Quaternion(0.14455965, 0.109050855, -0.07719711, 0.9804341)
 bones/28/rotation = Quaternion(0.13792598, 0.87453514, -0.36135563, -0.2925523)
 bones/29/rotation = Quaternion(0.9109137, -0.023371102, 0.41183046, 0.009257983)
 bones/30/rotation = Quaternion(0.07798597, -0.22068192, -0.040313754, 0.9713869)
@@ -7506,7 +7508,7 @@ bones/33/rotation = Quaternion(-0.3066148, 0.15129691, 0.0075479914, 0.9397019)
 bones/34/rotation = Quaternion(0.987799, -0.013653895, 0.15512724, 0.0015065806)
 bones/35/rotation = Quaternion(-0.1819961, -0.14555843, 0.0828098, 0.9689338)
 bones/38/position = Vector3(0.0061216066, 0.013751204, 0.0009858904)
-bones/38/rotation = Quaternion(-0.35129035, 0.70579493, 0.06053203, 0.6121965)
+bones/38/rotation = Quaternion(-0.3491692, 0.70684195, 0.062372465, 0.6120173)
 bones/39/rotation = Quaternion(0, 0, 0.00029500158, 1)
 bones/40/rotation = Quaternion(0, 0, -0.0012173046, 0.9999993)
 
@@ -7530,7 +7532,7 @@ surface_material_override/0 = ExtResource("22_vrbf8")
 surface_material_override/0 = ExtResource("28_sbbhh")
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="nova/Skeleton3D" index="5"]
-transform = Transform3D(-0.002569683, -0.5699985, 0.8216417, -0.42313793, 0.7450827, 0.5155638, -0.90606153, -0.34634292, -0.24310267, 0.0060611335, 0.007167274, -0.013181471)
+transform = Transform3D(-0.0059803138, -0.56997275, 0.8216418, -0.41864848, 0.7476101, 0.51557004, -0.9081287, -0.34089586, -0.2430892, 0.0060078516, 0.0072375014, -0.013213571)
 bone_name = "nova_rig_sword2"
 bone_idx = 40
 
@@ -7655,14 +7657,26 @@ dissolveBegin = 0.3
 dissolveDuration = 1.0
 meshes = [NodePath("../nova/Skeleton3D/nova_rig_jacket"), NodePath("../nova/Skeleton3D/nova_rig_body"), NodePath("../nova/Skeleton3D/nova_rig_pauldrons"), NodePath("../nova/Skeleton3D/nova_rig_sword")]
 
+[node name="dashFX" parent="." instance=ExtResource("37_ldc4w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.9293391)
+
+[node name="footprintsFX" parent="." instance=ExtResource("38_lk157")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20234227, 0)
+emitting = false
+
 [connection signal="hurt" from="." to="Hurt SFX" method="play_one_shot" unbinds=1]
 [connection signal="killed" from="." to="Death SFX" method="play_one_shot"]
 [connection signal="special_available" from="." to="Special Ready" method="play_one_shot"]
 [connection signal="entered" from="StateMachine/Idle" to="nova/Idle" method="enter"]
+[connection signal="entered" from="StateMachine/Idle" to="footprintsFX" method="set_emitting" binds= [false]]
 [connection signal="entered" from="StateMachine/Dash" to="StateMachine/Dash/Dash SFX" method="play" binds= [true]]
+[connection signal="entered" from="StateMachine/Dash" to="dashFX" method="set_emitting" binds= [true]]
+[connection signal="finished" from="StateMachine/Dash" to="dashFX" method="set_emitting" binds= [false]]
 [connection signal="entered" from="StateMachine/Moving" to="StateMachine/Moving/Footstep SFX" method="play"]
 [connection signal="entered" from="StateMachine/Moving" to="nova/Move" method="enter"]
+[connection signal="entered" from="StateMachine/Moving" to="footprintsFX" method="set_emitting" binds= [true]]
 [connection signal="finished" from="StateMachine/Moving" to="StateMachine/Moving/Footstep SFX" method="stop"]
+[connection signal="finished" from="StateMachine/Moving" to="footprintsFX" method="set_emitting" binds= [false]]
 [connection signal="attack_started" from="StateMachine/Attacking" to="DummyAnimation" method="attack" unbinds=1]
 [connection signal="entered" from="StateMachine/Attacking/Slash0" to="StateMachine/Attacking/Slash0/Attack SFX" method="play" binds= [true]]
 [connection signal="entered" from="StateMachine/Attacking/Slash1" to="StateMachine/Attacking/Slash1/Attack SFX" method="play" binds= [true]]

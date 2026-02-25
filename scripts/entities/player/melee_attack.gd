@@ -15,6 +15,9 @@ var active: bool
 
 @onready var entity : Entity = owner as Entity
 
+## emits whenever hitbox overlaps enemy for VFX
+signal trying_damage
+
 func enter(_prev_state: String, _data := {}) -> void:
 	super(_prev_state, _data)
 	hitbox.monitoring = true
@@ -44,6 +47,7 @@ func do_damage() -> void:
 	
 	for node in hitbox.get_overlapping_bodies():
 		if node is Entity and (node as Entity).faction != entity.faction:
+			trying_damage.emit(node)
 			(node as Entity).try_damage(damage * entity.damage_mult)
 
 func end() -> void:

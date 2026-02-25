@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6kuegn1dujx"]
+
+[ext_resource type="Script" uid="uid://ct422i5tgodjr" path="res://scripts/entities/HitVFXSpawner.gd" id="1_gmqw8"]
+[ext_resource type="PackedScene" uid="uid://n526bksfs56w" path="res://VFX/MuzzleFlash.tscn" id="2_y1act"]
+
+[node name="HitVFXSpawner" type="Node3D"]
+script = ExtResource("1_gmqw8")
+effect = ExtResource("2_y1act")
